@@ -7,7 +7,8 @@ This contains all my neovim config
     1. `brew install neovim`
     
 ### Clone this repository onto your .config/neovim folder 
-    2. Clone this repository onto your .config folder (might work by running `git clone ~/.config/neovim`)
+    1. Make sure to have backed up your previous neovim folder
+    2. Clone this repository onto your .config folder (might work by running `git clone ~/.config/nvim`)
     
 ### Ensure the installation of packer and all the plugins
-    3. run `nvim .config/neovim/lua/user/plugins.lua` and run `:w` in your neovim.
+    1. run `nvim .config/nvim/lua/user/plugins.lua` and run `:w` in your neovim.
