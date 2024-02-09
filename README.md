@@ -10,4 +10,4 @@ This contains all my neovim config
     2. Clone this repository onto your .config folder (might work by running `git clone ~/.config/neovim`)
     
 ### Ensure the installation of packer and all the plugins
-    3. Go to .config/neovim/lua/user/plugins.lua and run `:w` in your neovim.
+    3. run `nvim .config/neovim/lua/user/plugins.lua` and run `:w` in your neovim.
