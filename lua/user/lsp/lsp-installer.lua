@@ -43,8 +43,8 @@ if not lspconfig_status_ok then
   return
 end
 
-local handler_status_ok, handler = pcall(require, "user.lsp.handler")
-if not handler_status_ok then
+local handlers_status_ok, handlers = pcall(require, "user.lsp.handlers")
+if not handlers_status_ok then
   print("Failed to get handler from handler.lua")
   return
 end
@@ -55,8 +55,8 @@ for _, server in pairs(servers) do
   server = vim.split(server, "@")[1]
 
   local opts = {
-    on_attach = handler.on_attach,
-    capabilities = handler.capabilities,
+    on_attach = handlers.on_attach,
+    capabilities = handlers.capabilities,
   }
 
   if server == "jsonls" then
