@@ -1,2 +1,11 @@
 # Neovim-Config-file
 This contains all my neovim config
+
+
+## Requirements
+    1. install neovim 
+        a. using homebre `brew install neovim`
+    2. Clone this repository onto your .config folder
+        a. `git clone ~/.config`
+    3. Go to .config/neovim/lua/user/plugins.lua and run `:w` in your neovim 
+        a. This will ensure the installation of packer and all the plugins 
