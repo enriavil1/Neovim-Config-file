@@ -45,7 +45,7 @@ end
 
 local handlers_status_ok, handlers = pcall(require, "user.lsp.handlers")
 if not handlers_status_ok then
-  print("Failed to get handler from handler.lua")
+  print("[lsp-installer] Failed to get handler from handlers.lua")
   return
 end
 
