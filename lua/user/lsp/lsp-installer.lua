@@ -30,7 +30,8 @@ local servers = {
   "jsonls",
   "graphql",
   "eslint",
-  "clangd"
+  "clangd",
+  "ruby_ls"
 }
 
 mason.setup(settings)
