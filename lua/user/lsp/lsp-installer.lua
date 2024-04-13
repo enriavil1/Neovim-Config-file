@@ -79,7 +79,7 @@ for _, server in pairs(servers) do
     opts = vim.tbl_deep_extend("force", gopls_opts, opts)
   end
 
-  if server == "eslint" then
+  if server == "eslint" or server == "tsserver" then
     lspconfig.eslint.setup {
       root_dir = function() return vim.loop.cwd() end
     }
