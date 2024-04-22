@@ -1,12 +1,11 @@
 return {
-	settings = {
-
+  settings = {
     python = {
       analysis = {
-        autoSearchPaths = true;
-        useLibraryCodeForTypes = true;
+        autoSearchPaths = true,
+        useLibraryCodeForTypes = true,
         typeCheckingMode = "off"
       }
     }
-	},
+  },
 }

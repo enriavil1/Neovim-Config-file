@@ -23,7 +23,7 @@ null_ls.setup {
   debug = false,
   sources = {
     formatting.clang_format,
-    formatting.prettier.with { extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } },
+    formatting.prettier,
     formatting.black.with { extra_args = { "--fast" } },
     -- formatting.yapf,
     formatting.stylua,
