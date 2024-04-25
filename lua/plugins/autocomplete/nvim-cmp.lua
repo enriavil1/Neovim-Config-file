@@ -2,6 +2,7 @@ local handlers = require('plugins.autocomplete.handlers')
 
 return {
   "hrsh7th/nvim-cmp",
+  dependencies = { "SergioRibera/cmp-dotenv" },
   config = function()
     local cmp = require('cmp')
     local luasnip = require('luasnip')
@@ -60,6 +61,7 @@ return {
       },
       sources = {
         { name = "nvim_lsp" },
+        { name = "dotenv" },
         { name = "nvim_lua" },
         { name = "luasnip" },
         { name = "buffer" },

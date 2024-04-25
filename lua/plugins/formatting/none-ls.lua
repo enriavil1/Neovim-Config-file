@@ -4,6 +4,7 @@ return {
     "mason.nvim",
     "nvimtools/none-ls-extras.nvim",
   },
+  lazy = false,
   keys = { { "<leader>gf", vim.lsp.buf.format, desc = "Format current buffer" } },
   config = function()
     -- On save we format the file
