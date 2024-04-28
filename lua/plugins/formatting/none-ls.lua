@@ -6,7 +6,7 @@ return {
   },
   lazy = false,
   keys = { { "<leader>gf", vim.lsp.buf.format, desc = "Format current buffer" } },
-  config = function()
+  init = function()
     -- On save we format the file
     vim.api.nvim_create_autocmd("BufWritePre", {
       callback = function()
